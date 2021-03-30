@@ -1,31 +1,12 @@
-# Adonis fullstack application
+# Gear L&L server
+## about 
 
-This is the fullstack boilerplate for AdonisJs, it comes pre-configured with.
+## dependencies 
+1. nodejs 
+2. adonisjs
 
-1. Bodyparser
-2. Session
-3. Authentication
-4. Web security middleware
-5. CORS
-6. Edge template engine
-7. Lucid ORM
-8. Migrations and seeds
+## how to install, run server 
 
-## Setup
-
-Use the adonis command to install the blueprint
-
-```bash
-
-```
-
-or manually clone the repo and then run `npm install`.
-
-
-### Migrations
-
-Run the following command to run startup migrations.
-
-```js
-adonis migration:run
-```
+1. install dependencies 
+2. run '''npm install''' in the directory you clone this repo
+3. run '''adonis serve --dev'''

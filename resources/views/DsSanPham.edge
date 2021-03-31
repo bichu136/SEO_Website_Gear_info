@@ -8,14 +8,11 @@
     <link rel="stylesheet" href="../css/ColumnThongTin.css" />
     @endsection
     
-  </head>
-  <body>
-    <?php include_once('head.php'); ?>
+@section('body')
     <div class="dssp">
       <?php include_once("/server/TheHienSanPham.php");?>
     </div>
-    <?php include_once('footer.php'); ?>
-  </body>
+@endsection
   @section('custom_script')
   <script
       type="text/javascript"

@@ -12,12 +12,12 @@
 </head>
 
 <body>
-  <?php include_once('head.php'); ?>
+  @include('head.php')
   <div class="header" style="margin-top: 100px; margin-bottom: 20px">
     <h1>Giỏ hàng</h1>
   </div>
   <div class="TheHienGioHang">
-    <?php include_once('../server/TheHienChiTietGioHang.php') ?>
+@include('../server/TheHienChiTietGioHang.php')
   </div>
   <div class="" align=center>
     <button type="button" name="button" class="ThanhToanButton">Thanh toán</button>

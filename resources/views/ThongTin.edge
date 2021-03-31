@@ -2,26 +2,19 @@
 <html style="cursor: url(../Cursor/cursor.cur),default;">
   <head>
     <meta charset="utf-8" />
-    <title>Thông Tin</title>
-    <link rel="stylesheet" href="../css/Info.css" />
-    <link rel="stylesheet" href="../css/Frame.css" />
-    <link rel="stylesheet" href="../css/ColumnThongTin.css" />
-    <link rel="stylesheet" href="../css/Slide.css" />
-    <link rel="stylesheet" href="../css/Clock.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script
-      type="text/javascript"
-      language="javascript"
-      src="../js/Frame.js"
-    ></script>
-    <script src="../js/Slide.js"></script>
-    <script src="../js/Clock.js"></script>
-  </head>
-  <body>
-    <?php include_once('head.php'); ?>
+    @section('title')
+    Thông Tin
+    @endsection
+    @section('custom_style')
+    <link rel="stylesheet" href="/css/Info.css" />
+    <link rel="stylesheet" href="/css/Frame.css" />
+    <link rel="stylesheet" href="/css/ColumnThongTin.css" />
+    <link rel="stylesheet" href="/css/Slide.css" />
+    <link rel="stylesheet" href="/css/Clock.css" />
+    <script type="text/javascript" language="javascript" src="/js/Frame.js"></script>
+    <script src="/js/Slide.js"></script>
+    <script src="/js/Clock.js"></script>
+
     <div class="header" style="margin-top: 100px">
       <h1>Công Ty Vô Trách Nhiệm 2 Thành Viên</h1>
     </div>

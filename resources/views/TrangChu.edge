@@ -1,25 +1,20 @@
-<!DOCTYPE html>
-<html style="cursor: url(../Cursor/cursor.cur),default;">
-
-<head>
-  <meta charset="utf-8" />
-  <title>Home Page</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="../css/Frame.css" />
-  <link rel="stylesheet" href="../css/ColumnThongTin.css" />
-  <link rel="stylesheet" href="../css/TrangChu.css" />
-  <script type="text/javascript" language="javascript" src="../js/Frame.js"></script>
-</head>
-
-<body id="">
-@include('head.edge')
+@layout('layouts.default')
+  @section('title')
+  Home Page
+  @endsection
+  @section('custom_style')
+  <link rel="stylesheet" href="/css/Frame.css" />
+  <link rel="stylesheet" href="/css/ColumnThongTin.css" />
+  <link rel="stylesheet" href="/css/TrangChu.css" />
+  @endsection
+@section('body')
   <div style="padding-top: 100px;">
     <div class="Black">
       <div class="col-container">
         <div class="col">
           <table id="wrapper">
             <tr>
-              <td><img src="../images/logo.png" alt="" style="width: 315px;" /></td>
+              <td><img src="/images/logo.png" alt="" style="width: 315px;" /></td>
             </tr>
           </table>
         </div>
@@ -72,7 +67,10 @@
     </div>
   </div>
   </div>
-  @include('footer.edge')
+  @endsection
+  @section('custom_script')
+  <script type="text/javascript" language="javascript" src="/js/Frame.js"></script>
+  @endsection
 </body>
 
 </html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html style="cursor: url(../Cursor/cursor.cur),default;">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+        @section('title')
+        Thông Tin
+        @endsection
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    @section('custom_style')
+    <link rel="stylesheet" href="/css/Info.css" />
+    <link rel="stylesheet" href="/css/Frame.css" />
+    <link rel="stylesheet" href="/css/ColumnThongTin.css" />
+    <link rel="stylesheet" href="/css/Slide.css" />
+    <link rel="stylesheet" href="/css/Clock.css" />
+    @endsection
+
+
+  </head>
+  <body>
+  @include('head')
+  @section('body')
+  @endsection
+  @include('footer')
+  @section('custom_script')
+  <script type="text/javascript" language="javascript" src="/js/Frame.js" ></script>
+  <script src="/js/Slide.js"></script>
+  <script src="/js/Clock.js"></script>
+  @endsection
+  </body>
+</html>

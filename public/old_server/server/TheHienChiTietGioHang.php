@@ -14,7 +14,7 @@
   });
 </script>
 <?php
-include_once("csdl.php");
+@include("csdl.php");
 echo "<table id='BangGioHang' class='BangGioHang' border=1><tr><th>Sản phẩm</th><th>Tên sản phẩm</th><th>Số lượng</th><th>Giá tiền</th><th>Xóa</th></tr>";
 $caulenh = "Select * from chitietgiohang where magiohang=1";
 $chitietgiohang = TruyVan($caulenh);

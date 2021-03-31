@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html style="cursor: url(../Cursor/cursor.cur),default;">
-  <head>
-    <meta charset="utf-8" />
+@layout('layout.default')
     @section('title')
     Thông Tin
     @endsection
@@ -11,10 +8,9 @@
     <link rel="stylesheet" href="/css/ColumnThongTin.css" />
     <link rel="stylesheet" href="/css/Slide.css" />
     <link rel="stylesheet" href="/css/Clock.css" />
-    <script type="text/javascript" language="javascript" src="/js/Frame.js"></script>
-    <script src="/js/Slide.js"></script>
-    <script src="/js/Clock.js"></script>
-
+    @endsection
+    
+    @section('body')
     <div class="header" style="margin-top: 100px">
       <h1>Công Ty Vô Trách Nhiệm 2 Thành Viên</h1>
     </div>
@@ -24,7 +20,7 @@
           <h1>Thông Tin Trang Web</h1>
           <div>
             <img
-              src="../images/1610154939426.jpg"
+              src="/images/1610154939426.jpg"
               alt=""
               style="width: 80%"
               class="center"
@@ -182,7 +178,7 @@
           <div>
             <a href="TrangChu.php"
               ><img
-                src="../images/logo.png"
+                src="/images/logo.png"
                 alt=""
                 style="width: 80%"
                 class="center"
@@ -207,7 +203,7 @@
           </div>
           <br />
           <div>
-            <a href="../client/DsSanPham.php">
+            <a href="/client/DsSanPham.php">
             <img
               src="https://news.gearvn.com/wp-content/uploads/2020/09/67456756767.jpg"
               alt=""
@@ -238,6 +234,9 @@
         </div>
       </div>
     </div>
-    <?php include_once('footer.php'); ?>
-  </body>
-</html>
+    @endsection
+    @section('custom_script')
+    <script type="text/javascript" language="javascript" src="/js/Frame.js"></script>
+    <script src="/js/Slide.js"></script>
+    <script src="/js/Clock.js"></script>
+    @endsection

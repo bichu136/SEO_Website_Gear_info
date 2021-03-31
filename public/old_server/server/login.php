@@ -7,7 +7,7 @@
     echo '<div>';
     echo '<div>Welcome '.$_SESSION['username'].'</div>';
     echo '<a style="cursor:pointer" class="LogoutButton" href="">Logout</a>';
-    // echo '<button type="button" style="cursor:pointer" class="LogoutButton">Logout</button>';
+    echo '<button type="button" style="cursor:pointer" class="LogoutButton">Logout</button>';
     echo '</div>';
   }
   else

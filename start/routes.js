@@ -17,3 +17,8 @@
 const Route = use('Route')
 
 Route.get('/','MainpageController.view')
+Route.get('/DanhSachSanPham','ProductListController.view')
+Route.get('/DangKy','SignUpController.view')
+Route.get('/GioHang','CastController.view')
+Route.get('/ThongTin','AboutController.view')
+Route.post('/api/DangKy','SignUpController.get_data')

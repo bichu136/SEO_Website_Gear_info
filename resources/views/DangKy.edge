@@ -1,25 +1,30 @@
-<!DOCTYPE html>
-<html style="cursor: url(../Cursor/cursor.cur),default;">
-  <head>
-    <meta charset="utf-8" />
-    <title>Đăng Ký</title>
-    <link rel="stylesheet" href="../css/Frame.css" type="text/css" />
-    <link rel="stylesheet" href="../css/ColumnThongTin.css" />
-    <link rel="stylesheet" href="../css/DangKy.css">
+  @layout('layouts.default')
+
+    @section('title')
+    Đăng Ký
+    @endsection
+
+    @section('custom_style')
+    <link rel="stylesheet" href="/css/Frame.css" type="text/css" />
+    <link rel="stylesheet" href="/css/ColumnThongTin.css" />
+    <link rel="stylesheet" href="/css/DangKy.css">
+    @endsection
+
+    @section('custom_script')
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
       type="text/javascript"
       language="javascript"
-      src="../js/DangKy.js"
+      src="/js/DangKy.js"
     ></script>
     <script
       type="text/javascript"
       language="javascript"
-      src="../js/Frame.js"
+      src="/js/Frame.js"
     ></script>
-  </head>
-  <body>
-@include('head.php');
+    @endsection
+
+    @section('body')
     <div class="header" style="margin-top: 100px">
       <h1>Thông tin đăng ký</h1>
     </div>
@@ -48,6 +53,4 @@
         </div>
       </form>
     </div>
-@include('footer.php');
-  </body>
-</html>
+    @endsection
